@@ -15,14 +15,22 @@ find_package(rclcpp REQUIRED)
 find_package(base_tutorial_msg REQUIRED)
 
 add_executable(topic_example_publisher_node src/topic_example_publisher_node.cpp)
+add_executable(topic_example_subscriber_node src/topic_example_subscriber_node.cpp)
 ament_target_dependencies(
   topic_example_publisher_node
   rclcpp
   base_tutorial_msg
 )
 
+ament_target_dependencies(
+  topic_example_subscriber_node
+  rclcpp
+  base_tutorial_msg
+)
+
 install(TARGETS
   topic_example_publisher_node
+  topic_example_subscriber_node
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
