@@ -16,6 +16,8 @@ find_package(base_tutorial_msg REQUIRED)
 
 add_executable(topic_example_publisher_node src/topic_example_publisher_node.cpp)
 add_executable(topic_example_subscriber_node src/topic_example_subscriber_node.cpp)
+add_executable(demo_service_node src/demo_service_node.cpp)
+add_executable(demo_client_node src/demo_client_node.cpp)
 ament_target_dependencies(
   topic_example_publisher_node
   rclcpp
@@ -24,6 +26,18 @@ ament_target_dependencies(
 
 ament_target_dependencies(
   topic_example_subscriber_node
+  rclcpp
+  base_tutorial_msg
+)
+
+ament_target_dependencies(
+  demo_service_node
+  rclcpp
+  base_tutorial_msg
+)
+
+ament_target_dependencies(
+  demo_client_node
   rclcpp
   base_tutorial_msg
 )
@@ -31,6 +45,8 @@ ament_target_dependencies(
 install(TARGETS
   topic_example_publisher_node
   topic_example_subscriber_node
+  demo_service_node
+  demo_client_node
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
