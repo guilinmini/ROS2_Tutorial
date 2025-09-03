@@ -1,3 +1,12 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 ## System Environment
 
 - **Ubuntu Version**: Please provide the version of Ubuntu you are using (e.g., `20.04`, `22.04`, etc.)
