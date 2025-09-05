@@ -1,7 +1,7 @@
 ---
 name: Customer issue
 about: Provide detailed information about your issue to help us assist you
-title: ""
+title: "[ISSUE] "
 labels: ''
 assignees: ''
 
@@ -9,10 +9,13 @@ assignees: ''
 
 ## System Environment
 
-- **System Type**: Please provide the system type you are using (e.g., `Jetson Orin Nano`, `ubuntu20.04`, `ubuntu22.04`, etc.)
+- **Hardware Info**: Please provide system hardware information
+- **Ubuntu Version**: Please provide the ubuntu version you are using (e.g., `ubuntu20.04`, `ubuntu22.04`, etc.)
 - **ROS Version**: Please provide the version of ROS you are using (e.g., `ROS Noetic`, `ROS 2 Foxy`, etc.)
 - **Camera Model**: Please provide the model of camera you are using (e.g., `Femto Bolt`, `Gemini 335`, etc.)
-- **Branch**: Please provide the code branch you are currently working with (e.g., `main`, `v2-main`)
+- **Firmware Version**: Please provide the firmware version you are using.
+- **Branch**: Please provide the branch you are using (e.g., `main`, `v2-main`)
+- **Commit**: Please provide the commit ID you are using (e.g., `e2493a2`, `7834949`)
 
 ## Description
 
