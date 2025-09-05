@@ -1,7 +1,7 @@
 ---
 name: Customer issue
 about: Provide detailed information about your issue to help us assist you
-title: "[ISSUE] "
+title: ""
 labels: ''
 assignees: ''
 
