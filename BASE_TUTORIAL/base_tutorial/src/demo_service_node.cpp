@@ -15,10 +15,10 @@ private:
   void demo_service_callback(
       const std::shared_ptr<base_tutorial_msg::srv::AddInts::Request> request,
       std::shared_ptr<base_tutorial_msg::srv::AddInts::Response> response) {
-    RCLCPP_INFO(this->get_logger(), "收到请求：num1=%d,num2=%d", request->num1,
+    RCLCPP_INFO(this->get_logger(), "收到请求: num1=%d,num2=%d", request->num1,
                 request->num2);
     response->sum = request->num1 + request->num2;
-    RCLCPP_INFO(this->get_logger(), "响应结果：sum=%d", response->sum);
+    RCLCPP_INFO(this->get_logger(), "响应结果: sum=%d", response->sum);
   }
   rclcpp::Service<base_tutorial_msg::srv::AddInts>::SharedPtr service_;
 };

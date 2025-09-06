@@ -16,6 +16,8 @@ set(NODES
   topic_example_subscriber_node
   demo_service_node
   demo_client_node
+  demo_action_service_node
+  demo_action_client_node
 )
 
 foreach(node ${NODES})
